@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+
+
+@media screen and (max-width:1024px) {
+
+
+    #header:hover {
+        background: none;
+    }
+    #header .row .logo1 {
+        display: none;
+    }
+    #header:hover .row .logo2 {
+        display: none;
+    }
+    #header .row .logo3 {
+        display: block;
+    }
+
+    #header .headerbox:hover #nav .navbox .box_bg{
+        display: none;
+        border-top: 1px solid rgb(92, 92, 92, 0.2);
+    }
+    #header .depth1 {
+        display: none;
+    }
+
+    #header .row img {
+        padding: 15px 0;
+        margin-left: 10px;
+    }
+    .open .bar {
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+    .open .bar .bartop {
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+    }
+    .open .bar .barmiddle {
+        width: 14px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #header .row .open .bar .barbottom {
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #header:hover .row .open .bar .bartop {
+        background: #fff;
+    }
+    #header:hover .row .open .bar .barmiddle {
+        background: #fff;
+    }
+    #header:hover .row .open .bar .barbottom {
+        background: #fff;
+    }
+
+    .open {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+}
