@@ -4,7 +4,9 @@
 
 @media screen and (max-width:1024px) {
 
-
+    #header {
+        height: 60px;
+    }
     #header:hover {
         background: none;
     }
@@ -34,6 +36,7 @@
         width: 20px;
         height: 20px;
         position: relative;
+        cursor: pointer;
     }
     .open .bar .bartop {
         width: 20px;
@@ -74,4 +77,17 @@
         top: 30px;
         right: 20px;
     }
+
+    .m_menu .m_depth1 {
+        font-size: 24px;
+        color: #555555;
+        font-weight: bold;
+    }
+    
+    .m_menu .m_depth1 ul{
+        font-size: 13px;
+        color: #777777;
+        display: none;
+    }
 }
+
