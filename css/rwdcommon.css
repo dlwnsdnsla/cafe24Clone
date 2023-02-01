@@ -9,7 +9,7 @@
         
     }
     #header:hover {
-        background: rgba(255,255,255,0);
+        background: rgba(255,255,255,1);
     }
     
 
@@ -33,6 +33,9 @@
 
     #header:hover .logobox .logo {
         background: url(../img/logo-m.png);
+    }
+    #header:hover .logobox img {
+        display: block;
     }
     #header.on .logobox .logo {
         background: none;
@@ -79,15 +82,23 @@
         position: absolute;
         bottom: 0;
     }
-
     #header:hover .row .open .bar .bartop {
-        background: #fff;
+        background: #000;
     }
     #header:hover .row .open .bar .barmiddle {
-        background: #fff;
+        background: #000;
     }
     #header:hover .row .open .bar .barbottom {
-        background: #fff;
+        background: #000;
+    }
+    #header.on .row .open .bar .bartop {
+        background: #000;
+    }
+    #header.on .row .open .bar .barmiddle {
+        background: #000;
+    }
+    #header.on .row .open .bar .barbottom {
+        background: #000;
     }
 
     .open {
@@ -136,7 +147,7 @@
         height: 60px;
     }
     #header:hover {
-        background: none;
+        background: rgba(255,255,255,1);
     }
 
     #header .logobox {
@@ -146,6 +157,9 @@
         top: 50%;
         left: 15px;
         transform: translateY(-50%);
+    }
+    #header:hover .logobox img {
+        display: block;
     }
 
 
@@ -159,6 +173,7 @@
 
     #header:hover .logobox .logo {
         background: url(../img/logo-m.png);
+        display: block;
     }
 
 
@@ -198,16 +213,6 @@
         background: #fff;
         position: absolute;
         bottom: 0;
-    }
-
-    #header:hover .row .open .bar .bartop {
-        background: #fff;
-    }
-    #header:hover .row .open .bar .barmiddle {
-        background: #fff;
-    }
-    #header:hover .row .open .bar .barbottom {
-        background: #fff;
     }
 
     .open {
