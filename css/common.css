@@ -2,7 +2,7 @@
 
 #header {
     width: 100%;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(255, 255, 255,0);
     display: block;
     height: 100px;
     position: fixed;
@@ -21,7 +21,11 @@
 
 
 #header:hover {
-    background: #fff;
+    background: rgba(255, 255, 255,1);
+} 
+#header.on {
+    background: rgba(255, 255, 255,1);
+    box-shadow: 0px 8px 10px 2px rgb(0 0 0  / 10%);
 }
 
 
@@ -42,12 +46,21 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+#header .logobox img {
+    display: none;
+}
 
 #header:hover .logobox .logo {
     background: url(../img/logo-c.png);
 }
+#header.on .logobox .logo {
+    background: url(../img/logo-c.png);
+}
 
 #header:hover #nav .depth1>li {
+    color: #000;
+}
+#header.on #nav .depth1>li {
     color: #000;
 }
 
@@ -56,14 +69,24 @@
 #header:hover .row .open .bar .bartop {
     background: #000;
 }
+#header.on .row .open .bar .bartop {
+    background: #000;
+}
 #header:hover .row .open .bar .barmiddle {
+    background: #000;
+}
+#header.on .row .open .bar .barmiddle {
     background: #000;
 }
 #header:hover .row .open .bar .barbottom {
     background: #000;
 }
+#header.on .row .open .bar .barbottom {
+    background: #000;
+}
 #header #nav {
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -90,9 +113,12 @@
 #header #nav .depth1:hover .depth2 {
     display: block;
 }
+#header #nav .depth1:hover .depth2 {
+    display: block;
+}
 #header #nav .depth2 {
     position: absolute;
-    top: 0px;
+    top: -50px;
     left: 0px;
     width: 100%;
     color: rgb(92, 92, 92);
@@ -107,11 +133,11 @@
 }
 #nav .navbox .box_bg {
     width: 100%;
-    height: 200px;
+    height: 0;
     background:#fff;
-    display: none;
+    display: block;
     box-shadow: 0px 8px 10px 2px rgb(0 0 0  / 10%);
-    border-top: 1px solid rgb(189, 189, 189, 0.3);
+    /* border-top: 1px solid rgb(189, 189, 189, 0.3); */
     position: absolute;
     top: 100px;
 }
@@ -214,7 +240,7 @@
 .black_back {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     display: none;
     position: fixed;
     z-index: 200;

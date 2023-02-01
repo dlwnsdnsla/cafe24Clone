@@ -6,10 +6,12 @@
 
     #header {
         height: 60px;
+        
     }
     #header:hover {
-        background: none;
+        background: rgba(255,255,255,0);
     }
+    
 
     #header .logobox {
         width: 125px;
@@ -31,6 +33,12 @@
 
     #header:hover .logobox .logo {
         background: url(../img/logo-m.png);
+    }
+    #header.on .logobox .logo {
+        background: none;
+    }
+    #header.on .logobox img {
+        display: block;
     }
 
 
