@@ -20,6 +20,7 @@ q:before, q:after {
 }
 body {
 	line-height: 1;
+	font-family: "Noto Sans KR", "Malgun Gothic", 돋움, 굴림, "Open Sans";
 }
 pre {font-family:inherit; font-size:1em}
 address, em { font-style:normal }

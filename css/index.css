@@ -26,12 +26,14 @@
     padding: 0px 0px 30px;
     letter-spacing: 3px;
     text-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;
+    animation: fadeInDown 1s alternate;
 }
 #content .cont1 .slider .slider_text p {
     color: rgb(238, 238, 238);
     font-size: 18px;
     text-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;
     padding-top: 10px;
+    animation: fadeInUp 1s alternate;
 }
 
 #content .cont2 {
