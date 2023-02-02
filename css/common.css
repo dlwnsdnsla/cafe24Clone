@@ -265,13 +265,22 @@
     padding: 24px 40px;
     border-bottom: 1px solid #f1f1f1;
     position: relative;
+    transition: all 0.3s;
 }
 .m_menu .m_depth1>li:hover {
+    color: #c83044;
+}
+.m_menu .m_depth1>li.on {
     color: #c83044;
 }
 .m_menu .m_depth1>li:hover>.holder {
     border-top: 2px solid #c83044;
     border-left: 2px solid #c83044;
+}
+.m_menu .m_depth1>li.on>.holder {
+    border-top: 2px solid #c83044;
+    border-left: 2px solid #c83044;
+    transform: rotate(-315deg);
 }
 
 
@@ -286,7 +295,8 @@
     height: 7px;
     right: 20px;
     z-index: 10;
-    top:35px
+    top:35px;
+    transition: all 0.3s;
 
 }
 

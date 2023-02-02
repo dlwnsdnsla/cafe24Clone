@@ -14,6 +14,17 @@ $(window).scroll(function(){
 });
 
 
+$(".m_depth1>li").click(function(){
+    $(this).toggleClass("on");
+ })
+
+
+
+
+
+
+
+
 
 $(".bar").on("click",function(){
     $(".close").css("display","block");
