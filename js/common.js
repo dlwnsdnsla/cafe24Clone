@@ -12,9 +12,8 @@ $(window).scroll(function(){
     }
 
 });
-$("button").click(function(){
-    $("ul").toggle();
-  });
+
+
 
 $(".bar").on("click",function(){
     $(".close").css("display","block");
