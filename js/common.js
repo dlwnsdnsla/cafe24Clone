@@ -11,8 +11,15 @@ $(window).scroll(function(){
         $("#header").removeClass('on')
     }
 
-
 });
+$("button").click(function(){
+    $("ul").toggle();
+  });
+
+$(".bar").on("click",function(){
+    $(".close").css("display","block");
+    });
+
 
 
 $(".bar").on("click",function(){
