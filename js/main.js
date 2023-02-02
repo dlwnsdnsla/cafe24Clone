@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
     /*responsive code end*/
 
 
-    
+
     $(window).scroll( function(){
       $('#section>.cont').each( function(i){
           
@@ -46,6 +46,22 @@ jQuery(document).ready(function ($) {
           
       }); 
   });
+
+
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+        $('.gotop').fadeIn();
+    } else {
+        $('.gotop').fadeOut();
+    }
+    });
+
+    $('.gotop').click(function(){
+    $('html, body').animate({scrollTop : 0},600);
+    return false;
+    });
+
+
 
 
 

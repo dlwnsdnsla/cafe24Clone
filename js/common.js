@@ -17,7 +17,6 @@ $(window).scroll(function(){
 
 
 
-
 $(".bar").on("click",function(){
     $(".close").css("display","block");
     });
@@ -37,6 +36,9 @@ $(".close").on("click",function(){
 $(".m_depth1>li").on("click",function(){
     $(this).find(".m_depth2").stop().slideToggle();
    }); 
+
+
+   
 
 
 // $(".depth1").on("mouseover focus",function(){
@@ -63,7 +65,6 @@ $('.depth1').on('mouseleave blur', function(){
     $(".depth2").stop().animate({top:"-50px"},100);
     $("#header").css("border-bottom","0px solid rgb(189, 189, 189, 0.3)");
 })
-
 
 
 
