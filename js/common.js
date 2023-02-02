@@ -17,7 +17,7 @@ $(window).scroll(function(){
 
 
 $(window).scroll( function(){
-    $('#content>.cont').each( function(i){
+    $('#section>.cont').each( function(i){
         
         var bottom_of_element = $(this).offset().top + $(this).outerHeight()/5;
         var bottom_of_window = $(window).scrollTop() + $(window).height();

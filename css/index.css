@@ -2,7 +2,7 @@
 
 
 
-#content {
+#section {
     width: 100%;
 }
 
@@ -12,7 +12,7 @@
 
                /* 컨텐츠부분 공통적용 */
 
-#content>.cont {
+#section>.cont {
     opacity: 0;
     margin-top: 30px;
     padding-top: 80px;
@@ -169,35 +169,35 @@
 }
 
 
-#content .cont4_left {
+.cont4_left {
     width: 48%;
     margin-right: 2%;
     float: left;
     
 }
-#content .cont4_left .cont4_lbox {
+.cont4_left .cont4_lbox {
     position: relative;
 }
-#content .cont4_right {
+.cont4_right {
     width: 48%;
     float: right;
 }
-#content .cont4_right .cont4_rbox {
+.cont4_right .cont4_rbox {
     width: 49%;
     float: left;
     margin-left: 2%;
     margin-bottom: 2%;
     position: relative;
 }
-#content .cont4_right .cont4_rbox:first-child {
+.cont4_right .cont4_rbox:first-child {
     margin-left: 0%;
     margin-bottom: 0%;
 }
-#content .cont4_right .cont4_rbox:nth-child(3) {
+.cont4_right .cont4_rbox:nth-child(3) {
     margin-left: 0%;
     margin-bottom: 0%;
 }
-#content .cont4_left .cont4_lbox .lbox_txt {
+.cont4_left .cont4_lbox .lbox_txt {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.8);
@@ -207,22 +207,22 @@
     display: none;
     animation: fadeIn 0.5s alternate;
 }
-#content .cont4_left .cont4_lbox:hover .lbox_txt {
+.cont4_left .cont4_lbox:hover .lbox_txt {
     display: block;
 }
-#content .cont4_left .cont4_lbox .lbox_txt .txtbox {
+.cont4_left .cont4_lbox .lbox_txt .txtbox {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#content .cont4_left .cont4_lbox .lbox_txt .txtbox h4 {
+.cont4_left .cont4_lbox .lbox_txt .txtbox h4 {
     color: #fff;
     font-size: 24px;
     font-weight: normal;
     margin: 0px 0px 10px;
 }
-#content .cont4_right .cont4_rbox .rbox_txt {
+.cont4_right .cont4_rbox .rbox_txt {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.8);
@@ -232,16 +232,16 @@
     display: none;
     animation: fadeIn 0.5s alternate;
 }
-#content .cont4_right .cont4_rbox:hover .rbox_txt {
+.cont4_right .cont4_rbox:hover .rbox_txt {
     display: block;
 }
-#content .cont4_right .cont4_rbox .rbox_txt .txtbox {
+.cont4_right .cont4_rbox .rbox_txt .txtbox {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#content .cont4_right .cont4_rbox .rbox_txt .txtbox h4 {
+.cont4_right .cont4_rbox .rbox_txt .txtbox h4 {
     color: #fff;
     font-size: 24px;
     font-weight: normal;
