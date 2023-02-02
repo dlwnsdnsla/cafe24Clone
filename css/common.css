@@ -360,8 +360,8 @@
     margin: 0 auto;
     position: relative;
 }
-#footer span {
-    padding: 0px 10px;
+#footer .fnb span {
+    padding-left: 5px;
     color: #777;
     font-size: 14px;
 }
@@ -403,6 +403,11 @@
     margin: 0 0 0 120px;
     position: absolute;
     top: 25px;
+}
+#footer .address span {
+    padding: 0 10px;
+    color: #777;
+    font-size: 14px;
 }
 #footer .address li {
     display: inline-block;
