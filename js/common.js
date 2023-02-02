@@ -11,16 +11,8 @@ $(window).scroll(function(){
         $("#header").removeClass('on')
     }
 
+
 });
-
-
-
-
-
-$(".bar").on("click",function(){
-    $(".close").css("display","block");
-    });
-
 
 
 $(".bar").on("click",function(){
