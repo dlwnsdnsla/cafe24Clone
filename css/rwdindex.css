@@ -5,14 +5,16 @@
 
 @media screen and (max-width:1024px) {
 
-
-    #content .cont2 .cont2_text h2{
+    #content>.cont {
+        opacity: 1;
+    }
+    .cont .cont_box h2{
         font-size: 30px;
         color: #333;
         padding: 50px 0 0 0;
     
     }
-    #content .cont2 .cont2_text p {
+    .cont .cont_box p {
         font-size: 16px;
         font-weight: normal;
         color: #888;
@@ -20,7 +22,7 @@
     }
 
 
-    .cont2 .cont2box {
+    .cont .cont_box {
         width: 24%;
         float: left;
         margin-right: 1.333333333%;
@@ -28,25 +30,51 @@
     }
 
 
-    .cont2 .imgbox_wrap {
+    .cont .imgbox_wrap {
         width: 98%;
         margin: 0 auto;
     }
-    .cont2 .cont2box h3 {
+    .cont .cont_box h3 {
         font-size: 18px;
         font-weight: bold;
         color: #333;
         margin: 1px 0 0 0;
         transition: all 0.3s;
     }
-    .cont2 .cont2box p {
+    .cont .cont_box p {
         font-size: 13px;
         font-weight: normal;
         color: #777;
         margin: 10px 0 20px 0;
     }
-    .cont2 .cont2box .textbox {
+    .cont .cont_box .textbox {
         padding: 20px 0 0 5px;
+    }
+
+    #content .cont4_left {
+        width: 100%;
+        float: left;
+        margin-bottom: 2%;
+        transition: all 0.3s;
+        
+    }
+    #content .cont4_right {
+        width: 100%;
+        float: right;
+        transition: all 0.3s;
+    }
+
+
+    .cont6 a {
+        width: 49%;
+        margin-right: 0.5%;
+    }
+    .cont6 a:first-child {
+        margin-right: 0px;
+    }
+    .cont6 a:nth-child(3) {
+        margin-top: 5px;
+        margin-right: 0px;
     }
 }
 
@@ -57,30 +85,50 @@
 
 @media screen and (max-width:768px) {
 
-    .cont2 .cont2box {
+    #content>.cont {
+        opacity: 1;
+    }
+    .cont .cont_box {
         width: 49%;
         float: left;
         margin-right: 2%;
         transition: all 0.2s;
     }
 
-    .cont2 .cont2box:nth-child(2) {
+    .cont .cont_box:nth-child(2) {
         margin-right: 0px;
     }
 
 
-    .cont2 .cont2box h3 {
+    .cont .cont_box h3 {
         font-size: 16px;
         font-weight: bold;
         color: #333;
         margin: 1px 0 0 0;
         transition: all 0.3s;
     }
-    .cont2 .cont2box p {
+    .cont .cont_box p {
         font-size: 11px;
         font-weight: normal;
         color: #777;
         margin: 10px 0 20px 0;
+    }
+
+    #content .cont4_back {
+        width: 98%;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+    .cont6 a {
+        width: 49%;
+        margin-right: 0.5%;
+    }
+    .cont6 a:first-child {
+        margin-right: 0px;
+    }
+    .cont6 a:nth-child(3) {
+        margin-top: 5px;
+        margin-right: 0px;
     }
 
 }
