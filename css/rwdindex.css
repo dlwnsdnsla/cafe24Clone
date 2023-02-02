@@ -5,8 +5,9 @@
 
 @media screen and (max-width:1024px) {
 
-    #content>.cont {
+    #section>.cont {
         opacity: 1;
+        margin-top: 0px;
     }
     .cont .cont_box h2{
         font-size: 30px;
@@ -51,14 +52,14 @@
         padding: 20px 0 0 5px;
     }
 
-    #content .cont4_left {
+    .cont4_left {
         width: 100%;
         float: left;
         margin-bottom: 2%;
         transition: all 0.3s;
         
     }
-    #content .cont4_right {
+    .cont4_right {
         width: 100%;
         float: right;
         transition: all 0.3s;
@@ -85,7 +86,7 @@
 
 @media screen and (max-width:768px) {
 
-    #content>.cont {
+    #section>.cont {
         opacity: 1;
     }
     .cont .cont_box {
@@ -114,7 +115,7 @@
         margin: 10px 0 20px 0;
     }
 
-    #content .cont4_back {
+    .cont4_back {
         width: 98%;
         margin: 0 auto;
         transition: all 0.3s;
