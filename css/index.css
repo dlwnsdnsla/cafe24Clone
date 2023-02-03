@@ -119,9 +119,7 @@ article {
     margin: 0 0 25px;
 }
 
-.sl {
-    visibility: hidden;
-}
+
 
 .cont1 .slider{
     position: relative;
@@ -132,6 +130,7 @@ article {
     top: 50%;
     left: 50%;
     text-align: center;
+    transform: translate(-50%,-50%);
 }
 .cont1 .slider .slider_text h2 {
     color: rgb(255, 255, 255);

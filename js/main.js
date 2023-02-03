@@ -10,8 +10,7 @@ jQuery(document).ready(function ($) {
         pager:true,
         mode:'fade',
         speed:800,
-        
-        
+
         } );
 
 
