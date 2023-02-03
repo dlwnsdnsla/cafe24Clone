@@ -2,13 +2,15 @@ jQuery(document).ready(function ($) {
 
     $( '#section .cont1 .slider' ).bxSlider( {
         auto: true,
-          pause: 3000,
-          autoHover: true,
-          minSlides: 1,
-          maxSlides: 1,
-          slideWidth: 1920,
-          slideMargin: 3,
-          pager:true,
+        pause: 3000,
+        minSlides: 1,
+        maxSlides: 3,
+        slideWidth: 1920,
+        slideMargin: 0,
+        pager:true,
+        onSliderLoad: function(){
+			$(".sl").css("visibility", "visible").animate({opacity:1});
+		}
         } );
     $(window).scroll( function(){
       $('#section>.cont').each( function(i){

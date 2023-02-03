@@ -391,7 +391,8 @@
     font-size: 16px;
 }
 #footer .fnb li:hover a {
-    color:#fff
+    color:#fff;
+    text-decoration: underline;
 }
 
 
@@ -402,6 +403,16 @@
 }
 #footer .sns li {
     display: inline-block;
+    opacity: 0.6;
+    padding-left: 5px;
+    transition: all 0.3s;
+}
+#footer .sns li:first-child {
+    padding-left: 0px;
+}
+#footer .sns li:hover {
+    opacity: 1;
+    transform: scale(1.2);
 }
 #footer .address {
     width: 100%;

@@ -19,6 +19,20 @@ $(".m_depth1>li").click(function(){
  })
 
 
+ $('.depth1').on('mouseover focus', function(){
+    $(".box_bg").css("display","block");
+    $(".box_bg").stop().animate({height:"200px"},100);
+    $(".depth2").stop().animate({top:"0px"},100);
+    $("#header").css("border-bottom","1px solid rgb(189, 189, 189, 0.3)");
+})
+$('.depth1').on('mouseleave blur', function(){
+    $(".box_bg").css("display","none");
+    $(".box_bg").stop().animate({height:"0"},100);
+    $(".depth2").stop().animate({top:"-50px"},100);
+    $("#header").css("border-bottom","0px solid rgb(189, 189, 189, 0.3)");
+})
+
+
 
 
 
