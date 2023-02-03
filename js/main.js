@@ -4,14 +4,19 @@ jQuery(document).ready(function ($) {
         auto: true,
         pause: 3000,
         minSlides: 1,
-        maxSlides: 3,
+        maxSlides: 5,
         slideWidth: 1920,
         slideMargin: 0,
         pager:true,
-        onSliderLoad: function(){
-			$(".sl").css("visibility", "visible").animate({opacity:1});
-		}
+        mode:'fade',
+        speed:600,
+        
+        
         } );
+
+
+
+
     $(window).scroll( function(){
       $('#section>.cont').each( function(i){
           
