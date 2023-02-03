@@ -10,10 +10,6 @@ jQuery(document).ready(function ($) {
           slideMargin: 3,
           pager:true,
         } );
-
-
-
-
     $(window).scroll( function(){
       $('#section>.cont').each( function(i){
           
@@ -22,12 +18,9 @@ jQuery(document).ready(function ($) {
           
           if( bottom_of_window > bottom_of_element ){
               $(this).animate({'opacity':'1','margin-top':'0px'},700);
-          }
-          
+          }  
       }); 
   });
-
-
     $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
         $('.gotop').fadeIn();
@@ -35,13 +28,8 @@ jQuery(document).ready(function ($) {
         $('.gotop').fadeOut();
     }
     });
-
     $('.gotop').click(function(){
     $('html, body').animate({scrollTop : 0},600);
     return false;
     });
-
-
-
-
 });
