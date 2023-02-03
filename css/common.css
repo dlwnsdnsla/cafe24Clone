@@ -11,13 +11,6 @@
 }
 
 
-.down {
-    background-color:rgba(0,0,0,.8);
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
-    transition-duration:0.4s;
-    transition-timing-function:ease;
-  }
 
 
 #header:hover {
@@ -107,8 +100,12 @@
     color: #fff;
     position: relative;
     margin: 45px 0;
-    
+    transition: all 0.3s;
 }
+#header #nav .depth1>li:hover {
+    color: rgb(211, 25, 25)
+}
+
 #header #nav .depth1:hover .depth2 {
     display: block;
 }
