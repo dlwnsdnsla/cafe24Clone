@@ -51,6 +51,11 @@
         float: left;
         margin-right: 1.333333333%;
         transition: all 0.3s;
+        margin-bottom: 2%;
+    }
+
+    .cont .imgbox_wrap {
+        width: 98%;
     }
 
 
