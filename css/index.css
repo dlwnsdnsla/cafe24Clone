@@ -283,10 +283,12 @@ article {
     cursor: pointer;
     opacity: 0.6;
     transition: all 0.3s;
+    animation: fadeInDown 1s alternate infinite;
 }
 .gotop:hover {
     opacity: 1;
     transform: scale(1.2);
+    animation: fadeInDown 0s alternate;
 }
 
 

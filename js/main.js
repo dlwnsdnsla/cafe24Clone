@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 
     $( '#section .cont1 .slider' ).bxSlider( {
         auto: true,
-        pause: 3000,
+        pause: 5000,
         minSlides: 1,
         maxSlides: 1,
         slideWidth: 1920,
