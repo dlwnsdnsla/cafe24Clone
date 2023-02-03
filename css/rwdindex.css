@@ -5,9 +5,36 @@
 
 @media screen and (max-width:1024px) {
 
+    article {
+        padding-bottom: 30px;
+        overflow: hidden;
+    }
+    #section>.cont {
+        opacity: 1;
+    }
+    .topbx p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        color: #888;
+        padding: 20px 0 30px 0;
+        margin-bottom: 0px;
+    }
+
+    .cont1 .slider .slider_text h2 {
+        font-size: 40px;
+        line-height: 40px;
+        padding: 0px 0px 20px;
+    }
+    .cont1 .slider .slider_text p {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
     #section>.cont {
         opacity: 1;
         margin-top: 0px;
+        padding-top: 0px;
     }
     .cont .cont_box h2{
         font-size: 30px;
@@ -81,6 +108,10 @@
     .gotop {
         width: 0;
     }
+
+    .bx-wrapper img {
+        height:400px;
+      }
 }
 
 
@@ -90,9 +121,19 @@
 
 @media screen and (max-width:768px) {
 
-    #section>.cont {
-        opacity: 1;
+
+    .cont1 .slider .slider_text h2 {
+        font-size: 30px;
+        line-height: 30px;
+        padding: 0px 0px 20px;
     }
+    .cont1 .slider .slider_text p {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+
+
     .cont .cont_box {
         width: 49%;
         float: left;
@@ -104,6 +145,13 @@
         margin-right: 0px;
     }
 
+
+    .cont .cont_box h2{
+        font-size: 25px;
+        color: #333;
+        padding: 50px 0 0 0;
+    
+    }
 
     .cont .cont_box h3 {
         font-size: 16px;
@@ -135,5 +183,9 @@
         margin-top: 5px;
         margin-right: 0px;
     }
+
+    .bx-wrapper img {
+        height:300px;
+      }
 
 }

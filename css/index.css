@@ -7,6 +7,12 @@
 }
 
 
+article {
+    overflow: hidden;
+    transition: all 0.3s;
+    padding-bottom: 80px;
+}
+
 
 
 
@@ -14,11 +20,10 @@
 
 #section>.cont {
     opacity: 0;
-    margin-top: 30px;
-    padding-top: 80px;
-    overflow: hidden;
 }
-
+.cont1 {
+    padding: 0px;
+}
 .cont .imgbox_wrap {
     width: 80%;
     margin: 0 auto;
@@ -114,20 +119,16 @@
 
 
 
-
-
-
-
-
-.cont1 .slider {
+.cont1 .slider{
     position: relative;
 }
-
 .cont1 .slider .slider_text {
     position: absolute;
-    top: 40%;
-    left: 35%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
     text-align: center;
+    transform: translate(-50%,-50%);
 }
 .cont1 .slider .slider_text h2 {
     color: rgb(255, 255, 255);
@@ -138,6 +139,7 @@
     letter-spacing: 3px;
     text-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;
     animation: fadeInDown 1s alternate;
+    transition: all 0.2s;
 }
 .cont1 .slider .slider_text p {
     color: rgb(238, 238, 238);
@@ -145,11 +147,13 @@
     text-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;
     padding-top: 10px;
     animation: fadeInUp 1s alternate;
+    transition: all 0.2s;
 }
 
 .cont2 {
     width: 100%;
     overflow: hidden;
+    padding: 0px;
 }
 
 .cont3 {
@@ -251,12 +255,12 @@
 .cont5 .textbox {
     border: 1px solid rgb(209, 203, 203);
 }
+.cont6 {
+    padding-bottom: 0px;
+}
 .cont6 .cont_imgbox {
     background: url(../img/bn-img.jpg);
     height: 500px;
-}
-.cont6 p {
-    padding-bottom: 40px;
 }
 
 .cont6 a {
@@ -290,3 +294,16 @@
     background: #c83044;
     border: 1px solid #c83044;
 }
+
+
+.slider_wrap {
+    position: relative;
+}
+.slider_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
