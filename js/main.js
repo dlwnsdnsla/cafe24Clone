@@ -4,12 +4,12 @@ jQuery(document).ready(function ($) {
         auto: true,
         pause: 3000,
         minSlides: 1,
-        maxSlides: 5,
+        maxSlides: 1,
         slideWidth: 1920,
         slideMargin: 0,
         pager:true,
         mode:'fade',
-        speed:600,
+        speed:800,
         
         
         } );
