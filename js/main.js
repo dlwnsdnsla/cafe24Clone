@@ -1,17 +1,32 @@
 jQuery(document).ready(function ($) {
 
-    $( '#section .cont1 .slider' ).bxSlider( {
-        auto: true,
-        pause: 5000,
-        minSlides: 1,
-        maxSlides: 1,
-        slideWidth: 1920,
-        slideMargin: 0,
-        pager:true,
-        mode:'fade',
-        speed:800,
 
-        } );
+
+
+
+    $('.slide-group').slick({
+        autoplay:true,        
+        autoplaySpeed:3000,  
+        dots:true,          
+        arrows:true,          
+        prevArrow:'<button class="slick-prev slick-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+        nextArrow:'<button class="slick-next slick-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+        responsive: [ 
+        {  
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1
+          } 
+        },
+        { 
+          breakpoint: 768,
+          settings: {    
+            slidesToShow: 1
+          } 
+        }
+      ]
+    
+    })
 
 
 

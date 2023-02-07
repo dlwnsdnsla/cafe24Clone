@@ -4,7 +4,12 @@
 
 
 @media screen and (max-width:1024px) {
-
+    .cont1 .slider .slick-prev { 
+        font-size: 40px;
+    }
+    .cont1 .slider .slick-next { 
+        font-size: 40px;
+    }
     article {
         padding-bottom: 30px;
         overflow: hidden;
@@ -23,14 +28,14 @@
         margin-bottom: 0px;
     }
 
-    .cont1 .slider .slider_text h2 {
+    #section .cont1 .slide .slide_text h2 {
         font-size: 36px;
-        line-height: 40px;
-        padding: 0px 0px 20px;
     }
-    .cont1 .slider .slider_text p {
-        font-size: 15px;
-        padding-top: 10px;
+    .cont1 .slide .slide_text p {
+        font-size: 13px;
+    }
+    .cont1 .slick-arrow {
+        font-size: 30px;
     }
     .cont .cont_box h2{
         font-size: 30px;
@@ -122,15 +127,16 @@
 
 @media screen and (max-width:768px) {
 
-
-    .cont1 .slider .slider_text h2 {
+    #section .cont1 .slide .slide_text h2 {
         font-size: 30px;
-        line-height: 30px;
-        padding: 0px 0px 20px;
+        margin-bottom: 10px;
     }
-    .cont1 .slider .slider_text p {
-        font-size: 13px;
-        padding-top: 10px;
+    .cont1 .slide .slide_text p {
+        line-height: 14px;
+        font-size: 12px;
+    }
+    .cont1 .slick-arrow {
+        font-size: 20px;
     }
 
 
