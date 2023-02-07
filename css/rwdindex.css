@@ -84,7 +84,9 @@
     .cont_box .textbox {
         padding: 20px 0 0 5px;
     }
-
+    .cont1 {
+        padding-bottom: 30px;
+    }
     .cont4_left {
         width: 100%;
         float: left;
