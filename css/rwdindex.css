@@ -87,6 +87,15 @@
     .cont1 {
         padding-bottom: 30px;
     }
+    .cont3 .imgbox_box h3 {
+        font-size: 30px;
+    }
+    .cont3 .imgbox_box p {
+        font-size: 14px;
+    }
+    .cont3 .imgbox_box {
+        width: 100%;
+    }
     .cont4_left {
         width: 100%;
         float: left;
@@ -182,7 +191,12 @@
         color: #777;
         margin: 10px 0 20px 0;
     }
-
+    .cont3 .imgbox_box h3 {
+        font-size: 25px;
+    }
+    .cont3 .imgbox_box p {
+        font-size: 12px;
+    }
     .cont4_back {
         width: 98%;
         margin: 0 auto;
