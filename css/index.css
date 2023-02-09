@@ -10,6 +10,7 @@
     background-size:cover; 
     background-position:center; 
     position:relative;
+    transition: all 0.4s;
 }
 #section .slide1 { background-image:url(../img/visual01.jpg) }
 #section .slide2 { background-image:url(../img/visual02.jpg) }
