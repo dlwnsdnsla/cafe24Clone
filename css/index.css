@@ -15,7 +15,8 @@
 #section .slide2 { background-image:url(../img/visual02.jpg) }
 #section .slide3 { background-image:url(../img/visual03.jpg) }
 #section .cont1 .slide .slide_text { 
-    position:absolute; top:50%;
+    position:absolute; 
+    top:50%;
     transform:translateY(-50%); 
     color:#fff; 
     text-align:center;

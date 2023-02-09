@@ -139,8 +139,8 @@
 @media screen and (max-width:768px) {
 
     #section .cont1 .slide .slide_text h2 {
-        font-size: 30px;
-        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 5px;
     }
     .cont1 .slide .slide_text p {
         line-height: 14px;
