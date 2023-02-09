@@ -111,7 +111,12 @@ $(".close").on("click",function(){
  $(".m_menu").stop().animate({right:"-334px"},200);
  $(".black_back").css("display","none")
  $(".close").css("display","none")
-});    
+});
+$(".black_back").on("click",function(){
+    $(".m_menu").stop().animate({right:"-334px"},200);
+    $(".black_back").css("display","none")
+    $(".close").css("display","none")
+});
 
 
 
