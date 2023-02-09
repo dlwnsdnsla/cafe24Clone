@@ -64,6 +64,15 @@ $(window).scroll(function(){
 
 $(".m_depth1>li").click(function(){
     $(this).toggleClass("on");
+    if ( $(this).hasClass('on') ) {
+        $(this).find('.m_depth2').stop().slideToggle()
+    } else {
+        $(this).find('.m_depth2').stop().slideToggle()
+        $(this).removeClass('on')
+    }
+    $(this).siblings().find('.m_depth2').slideUp()
+    $(this).siblings().removeClass('on')
+    return false
  })
 
 
@@ -104,9 +113,6 @@ $(".close").on("click",function(){
  $(".close").css("display","none")
 });    
 
-$(".m_depth1>li").on("click",function(){
-    $(this).find(".m_depth2").stop().slideToggle();
-   }); 
 
 
    
