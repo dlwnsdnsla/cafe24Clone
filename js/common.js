@@ -1,4 +1,52 @@
-$(function(){
+$(window).on('load', function(){
+
+    var deviceSize = 1024
+function scrollOX(status){
+    $('html').css({
+        overflowY:status
+    })
+    return $('html').width()
+}
+var scX = scrollOX('hidden')
+var scO = scrollOX('scroll')
+var scD = scX - scO
+if (scD>0) {
+    deviceSize = deviceSize - scD
+}
+var ww = $(window).width()
+if (ww>deviceSize ) {
+    $('html').addClass('pc')
+} else {
+    $('html').addClass('mobile')
+}
+
+        
+
+$(window).on('resize', function(){
+    let ww = $(window).width()
+    if (ww>deviceSize && !$('html').hasClass('pc') ) {
+        $('html').addClass('pc').removeClass('mobile')
+        location.reload()
+    } else if (ww<=deviceSize && !$('html').hasClass('mobile')) {
+        $('html').addClass('mobile').removeClass('pc')
+        location.reload()
+    }
+})
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       //헤더 scroll

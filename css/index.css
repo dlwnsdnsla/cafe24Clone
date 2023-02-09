@@ -62,6 +62,7 @@
     font-size:60px; 
     color:#fff; 
     border:none;
+    transition: all 0.3s;
 }
 .cont1 .slick-prev { 
     left:4%; 
@@ -86,9 +87,9 @@
     height: 6px;
     margin: 0 3px;
     outline: 0;
+    cursor: pointer;
 }
 .cont1 .slick-dots li button { 
-    border:none; 
     width:0px; 
     height:4px; 
     background:#c83044;
@@ -124,7 +125,12 @@ article {
 }
 #section>.cont {
     opacity: 0;
-    margin-top: 30px;
+    margin-top: 50px;
+    transition: all 0.7s;
+}
+#section>.animate {
+    opacity: 1;
+    margin-top: 0px;
 }
 .cont1 {
     padding: 0px;
