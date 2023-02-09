@@ -2,12 +2,14 @@
 
 
 
-#section .cont1 { position:relative; }
+#section .cont1 { 
+    position:relative;
+ }
 #section .slide { 
     height:40vw; 
     background-size:cover; 
     background-position:center; 
-    position:relative; 
+    position:relative;
 }
 #section .slide1 { background-image:url(../img/visual01.jpg) }
 #section .slide2 { background-image:url(../img/visual02.jpg) }

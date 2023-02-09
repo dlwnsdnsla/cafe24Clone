@@ -192,7 +192,13 @@
     z-index: 50;
     padding-top:60px;
     z-index: 999999;
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
+}
+.m_menu::-webkit-scrollbar {
+    display: none; 
 }
 .close {
     position: absolute;
