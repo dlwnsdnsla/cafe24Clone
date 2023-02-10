@@ -1,5 +1,6 @@
 $(window).on('load', function(){
 
+//리사이즈
     var deviceSize = 1024
 function scrollOX(status){
     $('html').css({
@@ -19,9 +20,6 @@ if (ww>deviceSize ) {
 } else {
     $('html').addClass('mobile')
 }
-
-        
-
 $(window).on('resize', function(){
     let ww = $(window).width()
     if (ww>deviceSize && !$('html').hasClass('pc') ) {
@@ -32,24 +30,8 @@ $(window).on('resize', function(){
         location.reload()
     }
 })
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      //헤더 scroll
+//헤더 scroll
 $(window).scroll(function(){  
     var num = $(this).scrollTop();  
     if( num > 10 ){  
@@ -58,10 +40,9 @@ $(window).scroll(function(){
     else{
         $("#header").removeClass('on')
     }
-
 });
 
-
+//사이드메뉴
 $(".m_depth1>li").click(function(){
     $(this).toggleClass("on");
     if ( $(this).hasClass('on') ) {
@@ -74,33 +55,10 @@ $(".m_depth1>li").click(function(){
     return false
  })
 
-
- $('.depth1').on('mouseover focus', function(){
-    $(".box_bg").css("display","block");
-    $(".box_bg").stop().animate({height:"200px"},100);
-    $(".depth2").stop().animate({top:"0px"},100);
-    $("#header").css("border-bottom","1px solid rgb(189, 189, 189, 0.3)");
-})
-$('.depth1').on('mouseleave blur', function(){
-    $(".box_bg").css("display","none");
-    $(".box_bg").stop().animate({height:"0"},100);
-    $(".depth2").stop().animate({top:"-50px"},100);
-    $("#header").css("border-bottom","0px solid rgb(189, 189, 189, 0.3)");
-})
-
-
-
-
-
-
-
-
-
+//사이드메뉴 열기 닫기 버튼
 $(".bar").on("click",function(){
     $(".close").css("display","block");
     });
-
-
 
 $(".bar").on("click",function(){
  $(".m_menu").stop().animate({right:"0"},200);
@@ -117,23 +75,19 @@ $(".black_back").on("click",function(){
     $(".close").css("display","none")
 });
 
-
-
-   
-
-
-// $(".depth1").on("mouseover focus",function(){
-//     $(".box_bg").css("display","block");
-//    });
-//    $(".depth1").on("mouseleave blur",function(){
-//     $(".box_bg").css("display","none");
-//    });  
-
-
-
-
-
-
+//서브메뉴
+ $('.depth1').on('mouseover focus', function(){
+    $(".box_bg").css("display","block");
+    $(".box_bg").stop().animate({height:"200px"},100);
+    $(".depth2").stop().animate({top:"0px"},100);
+    $("#header").css("border-bottom","1px solid rgb(189, 189, 189, 0.3)");
+})
+$('.depth1').on('mouseleave blur', function(){
+    $(".box_bg").css("display","none");
+    $(".box_bg").stop().animate({height:"0"},100);
+    $(".depth2").stop().animate({top:"-50px"},100);
+    $("#header").css("border-bottom","0px solid rgb(189, 189, 189, 0.3)");
+})
 $('.depth1').on('mouseover focus', function(){
     $(".box_bg").css("display","block");
     $(".box_bg").stop().animate({height:"200px"},100);
@@ -146,14 +100,4 @@ $('.depth1').on('mouseleave blur', function(){
     $(".depth2").stop().animate({top:"-50px"},100);
     $("#header").css("border-bottom","0px solid rgb(189, 189, 189, 0.3)");
 })
-
-
-
-
-
-
-})
-
-
-
-
+});

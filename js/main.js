@@ -1,14 +1,11 @@
 $(window).on('load', function(){
-  setTimeout (function () {
 
+  //새로고침시 맨 위로
+  setTimeout (function () {
     scrollTo(0,0);
-    
     },100);
 
-
-
-
-
+  //슬라이더
     $('.slide-group').slick({
         autoplay:true,        
         autoplaySpeed:3000,  
@@ -30,26 +27,24 @@ $(window).on('load', function(){
           } 
         }
       ]
-    
     })
 
-
-
-
+//컨텐츠박스 애니메이션
     $(window).scroll( function(){
       $('#section>.cont').each( function(i){
           
-          var bottom_of_element = $(this).offset().top + $(this).outerHeight()/3;
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          var ele = $(this).offset().top + $(this).outerHeight()/3;
+          var wdw = $(window).scrollTop() + $(window).height();
           
-          if( bottom_of_window > bottom_of_element ){
+          if( wdw > ele ){
             $(this).addClass('animate');
           }else {
             $(this).removeClass('animate');
           }
       }); 
   });
-  
+
+//맨 위로 버튼
     $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
         $('.gotop').fadeIn();
@@ -62,4 +57,3 @@ $(window).on('load', function(){
     return false;
     });
 });
-
