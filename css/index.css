@@ -13,10 +13,12 @@ article {
     opacity: 0;
     margin-top: 50px;
     transition: all 0.7s;
+    transform: scale(0.9);
 }
 #section>.animate {
     opacity: 1;
     margin-top: 0px;
+    transform: scale(1);
 }
 .cont1 {
     padding: 0px;
@@ -157,8 +159,10 @@ article {
     font-size: 18px;
     line-height: 24px;
     margin:0; 
-    transform:translateY(100%); 
-    opacity:0; 
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    opacity: 0;
     transition:all 0.4s 0.3s;
     text-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;
     animation: fadeInUp 1s alternate; 
