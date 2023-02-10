@@ -70,8 +70,7 @@ $(".m_depth1>li").click(function(){
         $(this).find('.m_depth2').stop().slideToggle()
         $(this).removeClass('on')
     }
-    $(this).siblings().find('.m_depth2').slideUp()
-    $(this).siblings().removeClass('on')
+    $(this).siblings().removeClass('on').find('.m_depth2').slideUp()
     return false
  })
 
